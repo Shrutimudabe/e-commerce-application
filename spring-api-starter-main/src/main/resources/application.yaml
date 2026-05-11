@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: store
+  datasource:
+    url: jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true
+    username: root
+    password: "Your_password"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mudabeshruti@gmail.com
+    password: "security_password"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  logging:
+    level:
+      org.springframework.security: DEBUG
+
+razorpay:
+  key: "razorpay_key"
+  secret: "razorpay_secret"

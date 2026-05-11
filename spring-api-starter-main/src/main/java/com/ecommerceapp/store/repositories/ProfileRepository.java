@@ -1,0 +1,8 @@
+package com.ecommerceapp.store.repositories;
+
+import com.ecommerceapp.store.entities.Profile;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProfileRepository extends JpaRepository<Profile, Long> {
+}
